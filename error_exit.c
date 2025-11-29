@@ -12,14 +12,9 @@
 
 #include "minitalk.h"
 
-int	ft_strlen(char *str)
+void	error_exit(char *error)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
+	ft_putstr(error);
+	ft_putchar('\n');
+	exit(1);
 }
